@@ -18,7 +18,7 @@ function App() {
         <div className="container">
           <img src="/images/spacex.png" alt="SpaceX" style={{ width: 300, display: 'block', margin: 'auto' }} />
           <Route exact path="/" component={Launches} />
-          <Route path="/launch/:flight_number" component={Launch} />
+          <Route exact path="/launch/:flight_number" component={Launch} />
         </div>
       </Router>
     </ApolloProvider>
